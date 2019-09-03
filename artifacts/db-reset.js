@@ -63,7 +63,11 @@ MongoClient.connect(config.db, function(err, client) {
     console.log("Connected to the database: " + config.db);
 
     // remove existing data (if any), we don't want to look for errors here
+<<<<<<< Updated upstream
     var db = client.db(); // Getting the database from client
+=======
+    db = client.db(); // using the database itself not the client
+>>>>>>> Stashed changes
     db.dropCollection("users");
     db.dropCollection("allocations");
     db.dropCollection("contributions");

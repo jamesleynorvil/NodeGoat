@@ -36,7 +36,7 @@ MongoClient.connect(config.db, function(err, client) {
         process.exit(1);
     }
     console.log("Connected to the database: " + config.db);
-    db = client.db(); // Getting the database from client
+    var db = client.db(); // Getting the database from client
     /*
     // Fix for A5 - Security MisConfig
     // TODO: Review the rest of helmet options, like "xssFilter"

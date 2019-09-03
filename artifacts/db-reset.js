@@ -61,9 +61,9 @@ MongoClient.connect(config.db, function(err, client) {
         process.exit(1);
     }
     console.log("Connected to the database: " + config.db);
-    db = client.db(); // Getting the database from client
-    
+
     // remove existing data (if any), we don't want to look for errors here
+    var db = client.db(); // Getting the database from client
     db.dropCollection("users");
     db.dropCollection("allocations");
     db.dropCollection("contributions");

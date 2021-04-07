@@ -18,7 +18,7 @@ on:
       - '*hotfix'
       
   pull_request:
-    # The branches below must be a subset of the branches above
+    # The branches below must be a subset of the branches above // looks good
     branches:
       - master
       - '*hotfix'

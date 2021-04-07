@@ -16,12 +16,20 @@ on:
     branches:
       - master
       - '*hotfix'
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
+      - '*/test/*'
       
   pull_request:
     # The branches below must be a subset of the branches above // looks good
     branches:
       - master
       - '*hotfix'
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
+      - '*/test/*'
       
   schedule:
     - cron: '15 18 * * 0'

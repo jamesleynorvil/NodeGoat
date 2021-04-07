@@ -15,14 +15,16 @@ on:
   push:
     branches:
       - master
+      - '/^[0-9.]+-hotfix$/'
       # - '*.-hotfix'
-      # - /^[0-9.]+-hotfix$/
+      
   pull_request:
     # The branches below must be a subset of the branches above
     branches:
       - master
+      - '# - /^[0-9.]+-hotfix$/'
       # - '*.-hotfix'
-      # - /^[0-9.]+-hotfix$/
+      
   schedule:
     - cron: '15 18 * * 0'
 

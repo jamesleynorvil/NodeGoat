@@ -43,6 +43,7 @@ chrome.setDefaultService(service);
 // using the following link: https://github.com/zaproxy/zaproxy/wiki/FAQformauth
 // Then browse the Zap API viewing the existing manual setup through the views. Use that to formulate your code.
 // Another link I found useful: // http://stackoverflow.com/questions/27596775/zap-authentication-using-api-calls
+// blahblah
 
 test.before(function() {
     "use strict";
@@ -108,9 +109,7 @@ test.describe(zapTargetAppRoute + " regression test suite", function() {
         // Todo: Let's do something with resultsFromAllAsyncSeriesFunctions.
         var onCompletion = function(error, resultsFromAllAsyncSeriesFunctions) {
             if (!error)
-                console.log(
-                    resultsFromAllAsyncSeriesFunctions[resultsFromAllAsyncSeriesFunctions.length - 1].description
-                );
+                console.log("hello world!");
             else throw error;
             if (numberOfAlerts > alertThreshold) {
                 console.log(

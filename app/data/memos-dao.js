@@ -6,7 +6,9 @@ function MemosDAO(db) {
     /* If this constructor is called without the "new" operator, "this" points
      * to the global object. Log a warning and call it correctly. */
     if (false === (this instanceof MemosDAO)) {
-       // console.log("Warning: MemosDAO constructor called without 'new' operator");
+        console.log("Warning: MemosDAO constructor called without 'new' operator");
+        password = "pass123";
+        console.log(password);
         return new MemosDAO(db);
     }
 

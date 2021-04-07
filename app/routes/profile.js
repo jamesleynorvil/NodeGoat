@@ -9,7 +9,7 @@ function ProfileHandler(db) {
 
     this.displayProfile = function (req, res, next) {
         var userId = req.session.userId;
-
+        console.log(userId);
 
 
         profile.getByUserId(parseInt(userId), function (err, doc) {
